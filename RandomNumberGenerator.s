@@ -42,6 +42,14 @@ array_fill_done:
 	mov r1, #OUTPUT
 	bl pinMode
 
+	mov r0, #LED_BLUE	//set up led for output
+	mov r1, #OUTPUT
+	bl pinMode
+
+	mov r0, #LED_YELLOW	//set up led for output
+	mov r1, #OUTPUT
+	bl pinMode
+
 	mov r0, #LED_GREEN	// light the green LED while the program is running
 	mov r1, #OUTPUT
 	bl digitalWrite
