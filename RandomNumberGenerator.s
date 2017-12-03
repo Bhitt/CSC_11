@@ -1,5 +1,5 @@
 //-------------------------------
-// Random number generator (0-99)
+// Random number generator (0-999)
 //--------------------------------
 .equ LOW, 0
 .equ HIGH, 1
