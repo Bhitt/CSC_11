@@ -50,6 +50,9 @@ array_fill_done:
 	mov r1, #OUTPUT
 	bl pinMode
 
+	ldr r0, =welcome_str	//give instruction
+	bl printf
+
 	mov r0, #LED_GREEN	// light the green LED while the program is running
 	mov r1, #OUTPUT
 	bl digitalWrite
@@ -133,5 +136,5 @@ grab_num:
 a: .skip 1000			// array of 1000 bytes (no initialization)
 
 output_str: .asciz "Your random number is %d\n"
-welcome_str: .asciz "Press the top button to random a number from 0 to 999"
+welcome_str: .asciz "Press the top button to random a number from 0 to 999\n"
 
